@@ -1,0 +1,55 @@
+.detail__container {
+  box-shadow: 0 13px 27px -5px rgba(0, 0, 0, 0.25),
+              0 8px 16px -8px rgba(0, 0, 0, 0.3),
+              0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #3b3b3b;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 2fr;
+}
+.detail__poster {
+    margin-left: 0px;
+}
+.detail__title,
+.detail__year {
+    font-weight: 300;
+}
+
+.detail__title {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.detail__year,
+.detail__genre,
+.detail__summary {
+  color: #adaeb9;
+}
+
+.detail__year {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.detail__genres {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+}
+.detail__genre {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1090px) {
+    .detail__container {
+      grid-template-columns: 1fr;
+      width: 80%;
+      
+    }
+  }
